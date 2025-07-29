@@ -52,7 +52,7 @@ Place a single order which will process cooking, billing, and serving concurrent
   "tableNumber": "T1",
   "items": ["Burger", "Fries", "Coke"]
 }
-Response:
+##Response:
 
 "Order for table T1 processed successfully."
 POST /api/restaurant/multi-order
@@ -71,7 +71,7 @@ Request Body:
     "items": ["Pizza", "Cola"]
   }
 ]
-Response:
+##Response:
 
 
 [
@@ -79,35 +79,35 @@ Response:
   { "Table": "T2", "Message": "Table T2: Order received with 2 items: Pizza, Cola." }
 ]
 
-How to Run
+#How to Run
 Clone the repository:
 
 Navigate to the project directory:
 
-cd MiniRestaurantAppMultiTaskWithConcurrency
+#cd MiniRestaurantAppMultiTaskWithConcurrency
 Restore dependencies:
 
-dotnet restore
+#dotnet restore
 Run the project:
 
-dotnet run
+##dotnet run
 The API will be available at https://localhost:5001 (or http://localhost:5000).
 
 Use Postman or any API client to test the endpoints.
 
-Notes
+##Notes
 This project simulates delays with Task.Delay to mimic real-world cooking, billing, and serving times.
 
 The concurrency implementation allows multiple orders to be processed efficiently.
 
 Cancellation tokens are supported to cancel running tasks gracefully if needed.
 
-Author
+##Author
 Md Hasanuzzaman Rony
 Software Developer | ASP.NET Core Enthusiast
 Email: hasanuxaman.rony@gmail.com
 
-License
+##License
 MIT License
 
 ---
