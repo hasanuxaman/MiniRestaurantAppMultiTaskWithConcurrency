@@ -78,7 +78,8 @@ Response:
   { "Table": "T1", "Message": "Table T1: Order received with 2 items: Burger, Fries." },
   { "Table": "T2", "Message": "Table T2: Order received with 2 items: Pizza, Cola." }
 ]
-#How to Run
+
+How to Run
 Clone the repository:
 
 Navigate to the project directory:
