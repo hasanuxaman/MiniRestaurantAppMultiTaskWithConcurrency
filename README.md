@@ -126,4 +126,4 @@ Email: hasanuxaman.rony@gmail.com
 
 ## License
 
-MIT License
+Free License
