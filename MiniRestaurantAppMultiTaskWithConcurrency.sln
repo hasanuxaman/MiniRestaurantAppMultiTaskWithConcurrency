@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniRestaurantAppMultiTaskWithConcurrency", "MiniRestaurantAppMultiTaskWithConcurrency\MiniRestaurantAppMultiTaskWithConcurrency.csproj", "{249A316E-7088-40D3-A820-2B53A74DFAB3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{249A316E-7088-40D3-A820-2B53A74DFAB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{249A316E-7088-40D3-A820-2B53A74DFAB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{249A316E-7088-40D3-A820-2B53A74DFAB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{249A316E-7088-40D3-A820-2B53A74DFAB3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A940B0B-311C-4C0D-8C51-6E5BBF44DF0D}
+	EndGlobalSection
+EndGlobal
