@@ -16,11 +16,11 @@ An ASP.NET Core REST API project simulating a mini restaurant order processing s
 
 ## Technologies Used
 
-- ASP.NET Core 8.0
-- C# 11
-- .NET SDK (8.0)
-- Visual Studio 2022 / VS Code
-- Postman (for API testing)
+- ASP.NET Core 8.0  
+- C# 11  
+- .NET SDK 8.0  
+- Visual Studio 2022 / VS Code  
+- Postman (for API testing)  
 
 ---
 
@@ -47,19 +47,22 @@ Place a single order which will process cooking, billing, and serving concurrent
 
 **Request Body:**
 
-```json
 {
   "tableNumber": "T1",
   "items": ["Burger", "Fries", "Coke"]
 }
-## Response:
+
+Response:
 
 "Order for table T1 processed successfully."
-POST /api/restaurant/multi-order
+
+---
+
+### POST `/api/restaurant/multi-order`
+
 Place multiple orders simultaneously. Each order will be processed concurrently.
 
 Request Body:
-
 
 [
   {
@@ -71,47 +74,56 @@ Request Body:
     "items": ["Pizza", "Cola"]
   }
 ]
-## Response:
 
+Response:
 
 [
   { "Table": "T1", "Message": "Table T1: Order received with 2 items: Burger, Fries." },
   { "Table": "T2", "Message": "Table T2: Order received with 2 items: Pizza, Cola." }
 ]
 
-# How to Run
+---
+
+## How to Run
+
 Clone the repository:
 
 Navigate to the project directory:
 
-# cd MiniRestaurantAppMultiTaskWithConcurrency
+cd MiniRestaurantAppMultiTaskWithConcurrency
+
 Restore dependencies:
 
-## dotnet restore
+dotnet restore
+
 Run the project:
 
-## dotnet run
+dotnet run
+
 The API will be available at https://localhost:5001 (or http://localhost:5000).
 
 Use Postman or any API client to test the endpoints.
 
+---
+
 ## Notes
+
 This project simulates delays with Task.Delay to mimic real-world cooking, billing, and serving times.
 
 The concurrency implementation allows multiple orders to be processed efficiently.
 
 Cancellation tokens are supported to cancel running tasks gracefully if needed.
 
-## Author
-Md Hasanuzzaman Rony
-Software Developer | ASP.NET Core Enthusiast
-Email: hasanuxaman.rony@gmail.com
+---
 
-## License
-MIT License
+## Author
+
+Md Hasanuzzaman Rony  
+Software Developer | ASP.NET Core Enthusiast  
+Email: hasanuxaman.rony@gmail.com
 
 ---
 
-If you want, I can help you customize it with your GitHub repo link, email, or add more sections!
+## License
 
-
+MIT License
